@@ -1,0 +1,48 @@
+
+*Contenido de la carpeta:
+	-narpa
+	-winpcap v4 PORTABLE
+	*Ya no se incluye el winarp_sk al no ser compatible.
+
+	-------------------------------------------------------------
+
+	Narpa es un proyecto en c++ basado en otro programa de envío 
+	y recepción de paquetes arp llamado “arp_sk” y usa las 
+	librerías winpcap.
+
+	El proyecto consiste en la protección de una red a ataques 
+	en el protocolo arp engañando al propio atacante y 
+	aislándolo de la red.
+
+	-------------------------------------------------------------
+
+
+*Requisitos: 
+	-WINPCAP V4 PORTABLE (incluido)
+	-Windows XP (no ha sido testeado en otros sistemas)
+
+
+AYUDA:
+
+
+    \\\\\\\\\\\\\\\\\__________________________________////////////////////
+     \\                                                                 //
+     // NARPA    <-- (N)o  (A)(R)(P)  (A)ttacks -->  V_1.7              \\ 
+     \\________________________based on winarp_sk_______________________// 
+
+
+	Estre programa se encarga de proteger la red local ante ataques arp
+
+	No es necesario especificar ningun argumento al programa,
+
+	sin argumentos trabajara por defecto con la primera interfaz de red
+
+.	.	.	.	.	.	.	.	.	.
+
+         [-i  numero de interfaz] el numero lo visualizamos con el argumento -a
+
+         [-a]  muestra las interfaces de red del equipo local
+
+         [-g  ip] le damos la ip del gateway/router/proxy manualmente
+
+         [-h]  muestra la ayuda

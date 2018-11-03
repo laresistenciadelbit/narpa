@@ -1,0 +1,74 @@
+1.5
+-------------------------------------------------------------------------
+
+*Control de errores al abrir interfaces incompatibles
+*Control de errores al abrir interface por defecto
+*Soporte a redes cableadas:
+	-almacén de las macs recibidas en un arp request hacia el gw
+	-comparación de las anteriores con las macs de los hosts
+	  ./si una de ellas coincide, esa es el atacante y la otra el gw
+            \_si la que coincide se repite en mas de un host
+		-reescan de los hosts comparando con la mac atacante 
+		 y esperando a recibir una distinta a la del atacante
+	-cada vez que reescanea las ips busca si estan spoofeadas,
+	 entonces vuelve a escanear en "modo seguro" (esperando el
+	 paquete no proveniente del atacante)
+
+	-si en el escaneo no encontró atacante entonces espera al atacante
+
+*Con esto nos permite los siguientes casos (tanto para cable como para wifi):
+  <>Atacante spoofea gateway
+  <>Atacante spoofea hosts
+  <>Atacante iniciado antes que NARPA
+  <>Atacante cambia de ip con una separación mayor a 45 segundos
+	desde que para el ataque.
+
+
+NARPA ahora es capaz de responder ante esas situaciones.
+
+
+
+
+1.6
+-------------------------------------------------------------------------
+
+*Detención de ataques DoS y malas redirecciones de hosts por el atacante
+
+*Aumento de información en la interfaz del programa
+
+*Mejora del cambio de estructura del código realizado en la v1.5
+
+*corregido fallo de encontrar atacante si no teniamos su ip registrada
+
+*corregido fallo al reescaneo cuando ya estaban atacando antes de iniciar NARPA
+
+*Si NARPA encontró al atacante durante el escaneo de hosts se salta
+ el paso de esperar de nuevo a un atacante
+
+
+
+1.7
+-------------------------------------------------------------------------
+
+*Añadido el parámetro -g <IP> que nos permite elegir el gateway/router
+ a la hora de proteger la red al comunicarse con éste.
+ |
+ De la misma manera podemos configurar -g con la ip de un proxy interno,
+ o cualquier host interno de la red, y asi conseguimos proteger
+ la comunicación entre cualquier host y éste.
+ |
+ el parámetro -g se puede usar conjuntamente con el -i
+ para elegir ip e interfaz conjuntamente.
+
+
+*El código que llama a las librerías de WinPcap ha sido actualizado
+ para soportar su versión 4.0, de la misma manera que he incluido
+ las librerías portables de winpcap v4.01 ,por lo que ya no hay que
+ instalar ninguna librería adicional.
+
+
+*Las interfaces incompatibles ahora muestran un error de interfaz
+ incompatible en vez de tirar al programa.
+
+*Por defecto el programa ahora toma la interfaz mas alta en caso
+ de no haber indicado ninguna.

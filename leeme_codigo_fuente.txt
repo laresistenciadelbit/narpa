@@ -1,0 +1,24 @@
+    \\\\\\\\\\\\\\\\\__________________________________////////////////////
+     \\                                                                 //
+     // NARPA       <-- (N)o  (A)(R)(P)  (A)ttacks  -->       V_1.7     \\ 
+     \\________________________based on winarp_sk_______________________//
+
+
+
+-Podemos usar el fichero "narpa.sln" (vs9) o "narpa.vcproj" 
+ para compilar el proyecto manualmente.
+
+
+-La carpeta "codigo_fuente\Common" contiene las librerías winpcap v4
+ necesarias para el proceso de compilación (el proyecto las tiene incluidas).
+
+
+-Codigo fuente:
+
+	<>narpa.cpp        : programa principal main
+
+	<>header.h	   : contiene cabeceras con constantes de tiempo modificables
+
+	<>fwinarp_sk.cpp    : funciones modificadas del programa winarp_sk
+	
+	<>winpcap_common.cpp: funciones de winpcap necesarias en el proyecto
