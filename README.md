@@ -6,7 +6,7 @@
 
 -La documentación y ayuda del proyecto la podemos ver en:
 
-	http://narpa.wordpress.com
+	[http://narpa.wordpress.com](http://narpa.wordpress.com)
 
 -En la carpeta "binario" se encuentran los binarios ya compilados 
  de la aplicación junto con la librería del winpcap4 portable.
