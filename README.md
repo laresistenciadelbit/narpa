@@ -4,20 +4,20 @@
      \\________________________based on winarp_sk_______________________//
 
 
--La documentaci髇 y ayuda del proyecto la podemos ver en:
+-La documentaci贸n y ayuda del proyecto la podemos ver en:
 
-[http://narpa.wordpress.com](http://narpa.wordpress.com)
+[http://narpa.duriel.website](http://narpa.duriel.website)
 
 -En la carpeta "binario" se encuentran los binarios ya compilados 
- de la aplicaci髇 junto con la librer韆 del winpcap4 portable.
+ de la aplicaci贸n junto con la librer铆a del winpcap4 portable.
 
--La ayuda del c骴igo fuente se puede leer en "leeme_codigo_fuente.txt"
+-La ayuda del c贸digo fuente se puede leer en "leeme_codigo_fuente.txt"
 
--La carpeta "project imgs" contiene im醙enes de muestra del programa.
+-La carpeta "project imgs" contiene im谩genes de muestra del programa.
 	(1) azul     : gateway
-	(2) amarillo : v韈tima
+	(2) amarillo : v铆ctima
 	(3) rojo     : atacante
 	(4) verde    : equipo local con narpa
 
-		*La mac corresponde a su numeraci髇 de ip en su primer
-		 y 鷏timo par de bytes
+		*La mac corresponde a su numeraci贸n de ip en su primer
+		 y 煤ltimo par de bytes
